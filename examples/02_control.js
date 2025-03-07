@@ -30,12 +30,12 @@ if (selectedProduct === product.toLowerCase()) {
     if (selectedQuantity >= 2) {
         shoppingCart += `\nYou recieve 10% on your next ${product}\n`
     }
-} else if (selectedProduct == cap){
+} else if (selectedProduct == cap.toLowerCase()){
     caps = selectedQuantity
     if (selectedQuantity >= 3) {
         shoppingCart += `\nYou get a free ${cap} for buying 3!\n`
     }
-} else if (selectedProduct == sock) {
+} else if (selectedProduct == sock.toLowerCase()) {
     socks = selectedQuantity
 } else {
     shoppingCart += `\nThere's no discount for that selection\n`

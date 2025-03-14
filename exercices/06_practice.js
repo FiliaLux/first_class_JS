@@ -13,3 +13,13 @@ for (const number of numbers) {
 };
 
 console.log(`Even numbers: ${evenNumbers}\nOdd numbers: ${oddNumbers}`);
+
+const evenOdd = (numbers) => {
+    validNum = numbers.filter(number => number);
+    const even = validNum.filter(number => number % 2 === 0);
+    const odd = validNum.filter(number => number % 2 !== 0);
+    return {even, odd};
+};
+
+const {even, odd} = evenOdd(numbers);
+console.log(even, odd);
